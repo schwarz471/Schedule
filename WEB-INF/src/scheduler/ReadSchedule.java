@@ -21,9 +21,9 @@ import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
+@Path(value="/")
 public class ReadSchedule {	
 	@GET
-	@Path(value="/")
 	public Response read(@QueryParam("format") String format) throws FileNotFoundException, UnsupportedEncodingException{
 		FileInputStream fin = new FileInputStream("/schedules/db.rdf");
 		Model db = ModelFactory.createDefaultModel();

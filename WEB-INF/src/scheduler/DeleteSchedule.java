@@ -18,6 +18,7 @@ import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 
+@Path("/delete")
 public class DeleteSchedule {
 	@DELETE
 	@Path(value="/{id}")

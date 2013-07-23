@@ -29,7 +29,7 @@ import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.sun.jersey.multipart.FormDataParam;
 
-@Path("/")
+@Path("/create")
 public class CreateSchedule {
 	@POST
 	@Consumes(MediaType.MULTIPART_FORM_DATA)

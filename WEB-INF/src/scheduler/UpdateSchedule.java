@@ -31,6 +31,7 @@ import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.sun.jersey.multipart.FormDataParam;
 
+@Path("/update")
 public class UpdateSchedule {
 	@PUT
 	@Path(value="/{id}")
